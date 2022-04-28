@@ -155,24 +155,31 @@ border-radius: 0px;
     max-width: 586px; 
 }
 .hero-accent {
+    margin-bottom: 28px;
+}
+.accent{
     line-height:1.11;
     letter-spacing: 1.08px;
     text-transform: uppercase;
-    margin-bottom: 28px;
+    
     color: var(--accent-color);
 }
-.hero-title {
-    font-weight: 700;
-    font-size: 62px;
-    line-height: 1.16;
-    margin-bottom: 16px;
-    color: var(--title-text-color);
+.hero-title{
+margin-bottom: 16px;
 }
+.title{font-weight: 700;
+font-size: 62px;
+line-height: 1.16;
+
+color: var(--title-text-color);}
 .hero-text{
-    font-size: 12px;
-    line-height: 2.50;
-    color: var(--primary-text-color);
-    margin-bottom: 33px;
+margin-bottom: 33px;
+}
+.text{
+font-size: 12px;
+line-height: 2.50;
+color: var(--primary-text-color);
+
 }
 .btn-list {
     display: flex;
@@ -217,9 +224,7 @@ background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
-.statistic-item {
-    
-}
+
 .statistic-item:not(:last-child){
 margin-right: 35px;
 }
@@ -262,4 +267,82 @@ margin-right: 35px;
 
 .restaurants-item:not(:last-child) {
 margin-right: 89px;
+}
+.delivery{
+    padding: 200px 0px;
+    border-top: 1px solid #CACACA;
+    border-bottom: 1px solid #CACACA;
+}
+.delivery-accent{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.delivery-title{
+    align-items: center;
+    max-width: 520px;
+    text-align: center;
+    margin:0px auto 22px auto;
+    font-size: 44px;
+    line-height: 1.23;
+}
+.delivery-text {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.delivery-list{
+    display: flex;
+    margin-bottom: 60px;
+}
+.delivery-item{
+    width: calc((100%-170px)/3);
+    margin-right: 85px;
+    
+}
+
+.background-phone::before{
+    content: '';
+    display: block;
+    margin: 0px auto 32px auto;
+    width: 218px;
+    height: 218px;
+    background-image: url(../img/phone-bgrd-min.svg);
+}
+.background-restaurant::before{
+    content: '';
+    display: block;
+    margin: 0px auto 32px auto;
+    width: 218px;
+    height: 218px;
+    background-image: url(../img/buld-bgrd-min.svg);
+}
+.background-moto::before{
+    content: '';
+    display: block;
+    margin: 0px auto 32px auto;
+    width: 218px;
+    height: 218px;
+    background-image: url(../img/moto-bgrd-min.svg);
+}
+.delivery-item:last-child{
+    margin-right: 0px;
+}
+.item-title{
+    
+    font-size: 28px;
+    line-height:1.43;
+    text-align: center;
+    
+    color:var(--title-text-color);
+    margin-bottom: 15px;
+}
+.item-text{
+    line-height:1.67;
+    
+    color: var(--primary-text-color);
+}
+.delivery-btn{
+    display: flex;
+    
+    justify-content: center;
+    
 }
