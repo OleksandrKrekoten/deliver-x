@@ -319,6 +319,12 @@ img {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+  }
+}
+
 @media screen and (min-width: 1252px) {
   .container {
     width: 1252px;
@@ -550,13 +556,13 @@ header {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1252px) {
   .hero {
     background-image: url(../img/bg-hero/bg-hero.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1252px) and (min-device-pixel-ratio: 2), screen and (min-width: 1252px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1252px) and (min-resolution: 192dpi), screen and (min-width: 1252px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/bg-hero/bg-hero2x.jpg);
   }

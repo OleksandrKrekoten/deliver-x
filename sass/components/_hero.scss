@@ -9,7 +9,7 @@
        
         
     }
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:$desktop) {
         background-image: url(../img/bg-hero/bg-hero.jpg);
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
