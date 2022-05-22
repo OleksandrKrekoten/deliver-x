@@ -4,172 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="page-header">
-        <div class="container header-box">
-            <a href="" class="logo">
-                <svg width="161" height="48">
-                    <use href="./img/symbol-defs.svg#logo"></use>
-                </svg>
-            </a>
-            <nav>
-                <ul class="nav-list list">
-                    <li class="nav-item"><a href="" class="nav-link  link">Home</a></li>
-                    <li class="nav-item"><a href="" class="nav-link  link" >About</a></li>
-                    <li class="nav-item"><a href=""class="nav-link  link">Pricing</a></li>
-                    <li class="nav-item"><a href="" class="nav-link  link">Pages</a></li>
-                </ul>
-            </nav>
-            <a href="" class="header-link link">Cart(0)</a>
-            <ul class="auth-nav list">
-                <li class="auth-nav-item"><a href="" class="app-link link">Download app</a></li>
-                <li class="auth-nav-item"><a href="" class="auth-link link">Register</a></li>
-            </ul>
-             </div>
+    <header>
+<div class="container page-header">
+    <a href="./index.html" class="logo">
+   <img src="./img/logo.svg" alt="logotype" width="161">
+</a>
+<button type="button" class="mobile-open js-open-menu">
+    <svg width="40" height="40">
+        <use href="./img/symbol-defs.svg#open-menu"></use>
+    </svg>
+</button>
+<div class="nav">
+    <nav >
+    <ul class="nav__list">
+        <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Pricing</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Pages</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Cart(0)</a></li>
+    </ul>
+</nav>
+<ul class="authorization">
+    <li class="authorization__items"><button class="authorization__button">Download app</button></li>
+    <li class="authorization__items"><button class="authorization__button">Register</button></li>
+    
+</ul>
+</div>
+<div class="mobile-menu js-menu-container">
+    <button type="button" class="mobile-close js-close-menu">
+        <svg width="40" height="40">
+        <use href="./img/symbol-defs.svg#close-menu"></use>
+    </svg>
+    </button>
+    <ul class="mobile-nav__list ">
+        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Home</a></li>
+        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">About</a></li>
+        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Pricing</a></li>
+        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Pages</a></li>
+        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Cart(0)</a></li>
+   
+</div>
+</div>
     </header>
-    <main>
-        
-        <section class="hero  background-img">
-            <div class="phone"></div>
-                <div class="container  ">
-                    <div class="hero-box">
-                        <p class="hero-accent accent">Food Delivery Service </p>
-                        <h1 class="hero-title ">Delicious food at your fingertips</h1>
-                        <p class=" hero-text text">A ultricies eget condimentum sed faucibus enim maecenas variusd dolor sitegestas hendrerit
-                            et maecenas habitant
-                            mattis</p>
-                        <ul class="btn-list btn-list-hero   list">
-                            <li class="btn-item"><a href="" class="btn-orange link btn">Register restaurant</a></li>
-                            <li class="btn-item"><a href="" class="btn-white link btn">Download app</a></li>
-                        </ul>
-                        <ul class="statistic-list list">
-                            <li class="statistic-item">
-                                <p class="statistic-title">10M <span class="statistic-accent">+</span></p>
-                                <p class="statistic-text">Happy customers</p>
-                            </li>
-                            <li class="statistic-item">
-                                <p class="statistic-title">500k <span class="statistic-accent">+</span></p>
-                                <p class="statistic-text">Restaurants available</p>
-                            </li>
-                            <li class="statistic-item">
-                                <p class="statistic-title">30M <span class="statistic-accent">+</span></p>
-                                <p class="statistic-text">Successful deliveries</p>
-                            </li>
-                        </ul>
-                    </div>
-                    </div>
-                    
-        </section>
-        <section class="restaurants">
-            <div class="container">
-                <p class="restaurants-text">Trusted by 5,000+ restaurants around the world</p>
-                <ul class="restaurants-list list">
-                    <li class="restaurants-item">
-                        <svg class="restaurants-icon" width="239" height="40">
-                            <use href="./img/symbol-defs.svg#restaurant1"></use>
-                        </svg>
-                    </li>
-                    <li class="restaurants-item">
-                        <svg  class="restaurants-icon" width="239" height="40">
-                            <use href="./img/symbol-defs.svg#restaurant2"></use>
-                        </svg>
-                    </li>
-                    <li class="restaurants-item">
-                        <svg  class="restaurants-icon" width="239" height="40">
-                            <use href="./img/symbol-defs.svg#restaurant3"></use>
-                        </svg>
-                    </li>
-                    <li class="restaurants-item">
-                        <svg  class="restaurants-icon" width="239" height="40">
-                            <use href="./img/symbol-defs.svg#restaurant4"></use>
-                        </svg>
-                    </li>
-                </ul>
-            </div>
-            
-        </section>
-        <section class="delivery">
-            <div class="container">
-                <p class="delivery-accent accent">How it works</p>
-                <h2 class="delivery-title title" >Our simple, yet efficient delivery system</h2>
-                <p class="delivery-text">Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis
-                pellentesque</p>
-                <ul class="delivery-list list">
-                    <li class="delivery-item background-phone">
-                        <h3 class="item-title">1. Create a free account at Deliver X today</h3>
-                        <p  class="item-text">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam</p>
-                    </li>
-                    <li class="delivery-item background-restaurant">
-                        <h3  class="item-title">2. Order from your favorite restaurant</h3>
-                        <p class="item-text">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam</p>
-                    </li>
-                    <li class="delivery-item background-moto">
-                        <h3  class="item-title">3. Receive right in your house, hassle-free</h3>
-                        <p class="item-text">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam</p>
-                    </li>
-                </ul>
-                <ul class="btn-list list delivery-btn ">
-                    <li class="btn-item "><a href="" class="btn-orange link btn ">Register restaurant</a></li>
-                    <li class="btn-item "><a href="" class="btn-white link btn ">Download app</a></li>
-                </ul>
-            </div>
-        </section>
-       
-            <section class="advantages">
-            
-                <div class="container">
-                    <div class="advantages-background">
-                        <div class="advantages-box ">
-                            <h2 advantages-title title>Learn why Deliver X is great for your restaurant</h2>
-                            <p class="advantages-text text">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus
-                                mollis sit
-                                aliquam sit nullam</p>
-                            <ul class="advantages-list list">
-                                <li class="advantages-item lightning">
-                                    <h3 class="advantages-subtitle">Fast deliveries</h3>
-                                    <p class="advantages-subtext">Lorem ipsum dolor sit amet consecte</p>
-                                </li>
-                                <li class="advantages-item man">
-                                    <h3 class="advantages-subtitle">Certified riders</h3>
-                                    <p class="advantages-subtext">Lorem ipsum dolor sit amet consecte</p>
-                                </li>
-                                <li class="advantages-item money">
-                                    <h3 class="advantages-subtitle">Instant payments</h3>
-                                    <p class="advantages-subtext">Lorem ipsum dolor sit amet consecte</p>
-                                </li>
-                                <li class="advantages-item wallet">
-                                    <h3 class="advantages-subtitle">Low fees</h3>
-                                    <p class="advantages-subtext">Lorem ipsum dolor sit amet consecte</p>
-                                </li>
-                            </ul>
-                        
-                        </div>
-                    </div>
-                    <ul class="btn-list list delivery-btn ">
-                        <li class="btn-item "><a href="" class="btn-orange link btn ">Register restaurant</a></li>
-                        <li class="btn-item "><a href="" class="btn-white link btn ">Download app</a></li>
-                    </ul>
-                </div>
-            </section>
-       <section class="burger burger-background">
-           <div class="container">
-              <div class="burger-box">
-                <h2 class="burger-title ">A delicious burger is one tap away!</h2>
-                <p class="burger-text text">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
-                    aliquam sit nullam</p>
-                <a href="" class="btn-orange link btn">Download app</a>
-              </div>
-           </div>
-       </section>
-    </main>
+    <main></main>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
