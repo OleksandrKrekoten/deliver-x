@@ -1,0 +1,21 @@
+.btn{
+    color: var(--title-text-color);
+    background-color: transparent;
+    border: 1px solid rgba(16, 16, 16, 0.04);
+}
+.btn-orange{
+    color: var(--accent-color-text);
+    background-color: var(--accent-color);
+}
+.btn , .btn-orange{
+    padding: 19px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+        line-height: 1.12;
+        transition:transform color 300ms cubic-bezier(.17, .67, .83, .67),
+        box-shadow color 300ms cubic-bezier(.17, .67, .83, .67) ;
+    &:hover , &:focus{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+         transform: scale(1.08);
+    }
+}

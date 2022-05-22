@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,8 @@
         <use href="./img/symbol-defs.svg#open-menu"></use>
     </svg>
 </button>
-<div class="nav">
-    <nav >
+
+    <nav class="nav">
     <ul class="nav__list">
         <li class="nav__item"><a href="" class="nav__link">Home</a></li>
         <li class="nav__item"><a href="" class="nav__link">About</a></li>
@@ -32,11 +32,11 @@
     </ul>
 </nav>
 <ul class="authorization">
-    <li class="authorization__items"><button class="authorization__button">Download app</button></li>
-    <li class="authorization__items"><button class="authorization__button">Register</button></li>
+    <li class="authorization__items"><button class="btn">Download app</button></li>
+    <li class="authorization__items"><button class="btn-orange">Register</button></li>
     
 </ul>
-</div>
+
 <div class="mobile-menu js-menu-container">
     <button type="button" class="mobile-close js-close-menu">
         <svg width="40" height="40">
@@ -53,7 +53,38 @@
 </div>
 </div>
     </header>
-    <main></main>
+    <main>
+        <section class="">
+            <div class="container hero">
+                <p class="hero__description">Food Delivery Service</p>
+            <h1 class="hero__title">Delicious food at your fingertips</h1>
+            <p class="hero__subdescription">A ultricies eget condimentum sed faucibus enim maecenas variusd dolor sitegestas hendrerit et maecenas habitant mattis</p>
+            <ul class="hero-button___list">
+                <li class="hero-button__item">
+                    <button class="btn-orange">Register restaurant</button>
+                </li>
+                <li class="hero-button__item">
+                    <button class="btn">Download app</button>
+                </li>
+            </ul>
+            <ul class="statistics__list">
+                <li class="statistics__item">
+                    <h3 class="statistics__title">10M <span>+</span></h3>
+                    <p class="statistics__description">Happy customers</p>
+                </li>
+                <li class="statistics__item">
+                    <h3 class="statistics__title">500k <span>+</span></h3>
+                    <p class="statistics__description">Restaurants available</p>
+                </li>
+                <li class="statistics__item">
+                    <h3 class="statistics__title">30M <span>+</span></h3>
+                    <p class="statistics__description">Successful deliveries</p>
+                </li>
+            </ul>
+            </div>
+        </section>
+            
+    </main>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

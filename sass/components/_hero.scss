@@ -1,0 +1,121 @@
+.hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $desktop) {
+        padding-top: 163px;
+        padding-bottom: 163px;
+       
+        
+    }
+    @media screen and (min-width:1200px) {
+        background-image: url(../img/bg-hero/bg-hero.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../img/bg-hero/bg-hero2x.jpg);
+        
+            }
+        
+        }
+    background-repeat: no-repeat;
+background-position: right;
+background-size: 502px;}
+
+
+               
+
+.hero__description {
+    font-size: 14px;
+    line-height: 1.11;
+        /* identical to box height, or 111% */
+    max-width: 574px;
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+    margin-bottom: 28px;
+        color: var(--accent-color);
+        @media screen and (min-width:$tablet){
+            font-size: 18px;
+        }
+}
+.hero__title {
+    font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        /* or 116% */
+        margin-bottom: 16px;
+    max-width: 515px;
+    
+        color: var(--title-text-color);
+        @media screen and (min-width:$tablet) {
+            font-size: 62px;
+                line-height: 1.16;
+        }
+}
+.hero__subdescription {
+    font-size: 12px;
+        line-height: 2.50;
+        /* or 250% */
+        margin-bottom: 33px;
+    
+    
+        color: var(--primery-text-color);
+}
+.hero-button___list {
+    display: flex;
+margin-bottom: 30px;
+@media screen and (min-width:$tablet){
+    margin-bottom: 60px;
+}}
+.hero-button__item {
+    &:not(:last-child){
+        margin-right: 27px;
+    
+    }
+}
+
+.statistics__list{
+    display: flex;
+    
+    
+    
+    @media screen and (min-width:$tablet) {
+        max-width: 586px;
+        padding-top: 60px;
+        border-top: 1px solid #CACACA;
+    }
+}
+
+.statistics__item {
+    max-width: 183px;
+    &:not(:last-child){
+        margin-right: 35px;
+    }
+}
+
+.statistics__title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.18;
+        /* or 118% */
+    
+    
+        color: var(--title-text-color);
+        @media screen and (min-width:$tablet) {
+            font-size: 56px;
+        }
+    span{
+        color: var(--accent-color);
+    }
+}
+
+.statistics__description {
+    font-size: 18px;
+        line-height: 1.11;
+        /* identical to box height, or 111% */
+    
+    
+        color:var(--primery-text-color);
+}
