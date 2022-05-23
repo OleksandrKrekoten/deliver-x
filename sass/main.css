@@ -921,7 +921,7 @@ header {
 }
 
 .benefits__box {
-  max: width 597px;
+  max-width: 597px;
 }
 
 .benefits__title {
