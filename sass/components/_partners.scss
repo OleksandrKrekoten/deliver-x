@@ -1,0 +1,35 @@
+.partners {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    border-bottom: 1px solid #cacaca;
+    @media screen and (max-width:$desktop) {
+         display: none;
+        
+    }
+}
+
+
+
+.partners__description {
+    font-size: 20px;
+        line-height: 1.10;
+        /* identical to box height, or 110% */
+    margin-bottom: 48px;
+        text-align: center;
+    
+        color: var(--primery-text-color);
+}
+
+.partners__list { display: flex;
+    margin: -40px;
+
+
+}
+
+.partners__item {
+    width: calc((100%-40px*4)/4);
+    margin: 40px;
+   
+   
+}
+
