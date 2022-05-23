@@ -1,21 +1,116 @@
-.benefits {}
+.benefits { padding-top: 30px;
+    padding-bottom: 30px;
+    @media screen and (min-width:$tablet) {padding-top: 90px;
+        padding-bottom: 90px;
+    }
+        @media screen and (min-width:$desktop) {
+            padding-top: 188px;
+            padding-bottom: 200px;
+        }
+}
 
-.container {}
 
-.benefits__box {}
 
+.benefits__box {max: width 597px; ;}
 .benefits__content {}
 
-.benefits__title {}
+.benefits__title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.23;
+        /* or 123% */
+    margin-bottom: 16px;
+    
+        color:var(--title-text-color);
+        @media screen and (min-width:$tablet) {
+            font-size: 44px;
+        }
+}
 
-.benefits__discription {}
 
-.benefits__list {}
+.benefits__discription {
+    font-size: 12px;
+        line-height: 1.3;
+        /* or 250% */
+    margin-bottom: 30px;
+    
+        color: var(--primery-text-color);
+        @media screen and (min-width:$tablet) {
+            font-size: 12px;
+                line-height: 2.5;
+        }
+}
 
-.benefits__item {}
+.benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
 
-.benefits__subtitle {}
+.benefits__item {
+    width: 43%;
+    margin: 10px;
+    @media screen and (min-width:$tablet) {
+    width: 35%;
+        }
+}
+.icon-lightning::before{
+    content: '';
+    display: block;
+    width: 100%;
+height: 63px;
+    background-image: url(../img/benefits/lightning.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.icon-man::before{
+    content: '';
+    display: block;
+    height: 63px;
+    background-image: url(../img/benefits/man.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.icon-money::before{
+    content: '';
+    display: block;
+    height: 63px;
+    background-image: url(../img/benefits/money.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.icon-wallet::before{
+    content: '';
+    display: block;
+    height: 63px;
+    background-image: url(../img/benefits/wallet.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.benefits__subtitle {
+    font-size: 18px;
+        line-height: 1.27;
+        /* identical to box height, or 127% */
+    
+    
+        color: #121212;
+        @media screen and (min-width:$tablet) {
+                font-size: 22px;
+               
+            }
+}
 
-.benefits__subdiscription {}
+.benefits__subdiscription {
+    font-size: 12px;
+        line-height: 1.3;
+        max-width: 234px;
+        /* identical to box height, or 214% */
+    
+    
+        color: #656565;
+        @media screen and (min-width:$tablet) {
+            font-size: 14px;
+                line-height: 2.14;
+        }
+}
 
-.benefits__bg {}
