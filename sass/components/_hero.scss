@@ -97,25 +97,31 @@ margin-bottom: 30px;
 
 .statistics__title {
     font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.18;
         /* or 118% */
     
-    
+    span {
+            color: var(--accent-color);
+        }
         color: var(--title-text-color);
+       @media screen and (min-width:350px) {
+            font-size: 36px;
+       }
         @media screen and (min-width:$tablet) {
             font-size: 56px;
         }
-    span{
-        color: var(--accent-color);
-    }
+    
 }
 
 .statistics__description {
-    font-size: 18px;
+    font-size: 14px;
         line-height: 1.11;
         /* identical to box height, or 111% */
     
     
         color:var(--primery-text-color);
+        @media screen and (min-width:350px) {
+                font-size: 18px;
+            }
 }

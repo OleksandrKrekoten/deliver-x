@@ -464,6 +464,7 @@ header {
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
+  overflow-x: scroll;
 }
 
 @media screen and (min-width: 768px) {
@@ -651,10 +652,20 @@ header {
 
 .statistics__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.18;
   /* or 118% */
   color: var(--title-text-color);
+}
+
+.statistics__title span {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 350px) {
+  .statistics__title {
+    font-size: 36px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -663,15 +674,17 @@ header {
   }
 }
 
-.statistics__title span {
-  color: var(--accent-color);
-}
-
 .statistics__description {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.11;
   /* identical to box height, or 111% */
   color: var(--primery-text-color);
+}
+
+@media screen and (min-width: 350px) {
+  .statistics__description {
+    font-size: 18px;
+  }
 }
 
 .partners {
@@ -921,7 +934,45 @@ header {
 }
 
 .benefits__box {
-  max-width: 597px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits__bg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__bg {
+    display: block;
+    width: 597px;
+    height: 684px;
+    background-image: url(../img/benefits/bg/bg-phone.png);
+    background-repeat: no-repeat;
+    background-size: 282px;
+    background-position: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 1252px) {
+  .benefits__bg {
+    background-image: url(../img/benefits/bg/bg-phone.png), url(../img/benefits/bg/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 282px, 472px;
+    background-position: -4% 50% ,50% 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__content {
+    width: 590px;
+  }
 }
 
 .benefits__title {

@@ -11,8 +11,35 @@
 
 
 
-.benefits__box {max-width :597px; ;}
-.benefits__content {}
+.benefits__box {display: flex;
+justify-content: space-between;}
+.benefits__bg{
+    
+        @media screen and (max-width:$tablet){
+            display: none;
+        }
+        @media screen and (min-width:$tablet) {
+            display: block;
+                width: 597px;
+                height: 684px;
+                background-image: url(../img/benefits/bg/bg-phone.png);
+                background-repeat: no-repeat;
+                background-size: 282px;
+                background-position: 50% 50%;
+            }
+@media screen and (min-width:$desktop) {
+    background-image: url(../img/benefits/bg/bg-phone.png),url(../img/benefits/bg/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 282px, 472px;
+        background-position:-4% 50% ,50% 50%;
+}
+
+}
+.benefits__content {
+    @media screen and (min-width:$tablet) {
+    width: 590px; 
+    }
+}
 
 .benefits__title {
     font-weight: 700;

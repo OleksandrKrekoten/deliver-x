@@ -104,6 +104,7 @@ header{
             background-size:auto;
                 background-position: center;
                 background-repeat: no-repeat;
+                overflow-x: scroll;
     @media screen and (min-width:768px) {
             display: none;
         }
