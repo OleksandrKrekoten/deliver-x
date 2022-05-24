@@ -1,0 +1,80 @@
+.burger {
+    
+        background-color: var(--title-text-color);
+        
+}
+
+
+
+.burger__title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.18;
+        /* or 118% */
+    
+    margin-bottom: 15px;
+        color: #FFFFFF;
+        @media screen and (min-width:$tablet) {
+            font-size: 56px;
+            
+        }
+}
+
+.burger__discription {
+    font-size: 12px;
+        line-height: 1.5;
+        /* or 250% */
+    
+    margin-bottom: 27px;
+        color: #FFFFFF;
+        @media screen and (min-width:$tablet) {
+            line-height: 2.5;
+        }
+}
+.burger-box{ display: flex; justify-content: space-between;}
+.burger-content{
+    padding-top: 30px;
+        padding-bottom: 30px;
+    
+        @media screen and (min-width:$tablet) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            width: 580px;
+        }
+    
+        @media screen and (min-width:$desktop) {
+            padding-top: 274px;
+            padding-bottom: 270px;
+        }
+    
+}
+.burger-bg{ 
+    padding-top:30px ;
+        padding-bottom: 30px;
+    @media screen and (min-width:$tablet) {
+        padding-top:100px ;
+            padding-bottom:100px ;
+    }
+        @media screen and (min-width:$desktop) {
+            padding-top:274px ;
+            padding-bottom:270px ;
+        }
+    @media screen and (max-width:767px) {
+    display: none;
+}
+@media screen and (min-width:$tablet){
+    width: 576px;
+    background-image: url(../img/burger/left.png);
+        background-repeat: no-repeat;
+        background-size: 223px;
+        background-position: 8% 50%;
+}
+@media screen and (min-width:$desktop){
+    width: 676px;
+    
+    background-image: url(../img/burger/left.png), url(../img/burger/right.png);
+    background-repeat: no-repeat;
+    background-size: 323px;
+    background-position: 10% 50%, 114% 50%;
+}
+}
