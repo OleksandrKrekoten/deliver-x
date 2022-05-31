@@ -1518,24 +1518,22 @@ header {
   }
 }
 
-.order::before {
+.management__item::before {
   position: absolute;
-  content: '';
   display: block;
   width: 72px;
   height: 72px;
-  background-image: url(../img/management/icon/order.svg);
   left: -90px;
 }
 
-.pos::before {
-  position: absolute;
+.order::before {
   content: '';
-  display: block;
-  width: 72px;
-  height: 72px;
+  background-image: url(../img/management/icon/order.svg);
+}
+
+.pos::before {
+  content: '';
   background-image: url(../img/management/icon/pos.svg);
-  left: -90px;
 }
 
 .management__subdiscription {
@@ -1555,5 +1553,96 @@ header {
   .management__subdiscription {
     color: white;
   }
+}
+
+.customers {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.customers__title {
+  font-size: pxx;
+  line-height: 1.23;
+  /* identical to box height, or 123% */
+  margin-bottom: 16px;
+  color: var(--title-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .customers__title {
+    font-size: 44px;
+  }
+}
+
+.customers__discription {
+  font-size: 14px;
+  line-height: 1.67;
+  /* or 167% */
+  margin-bottom: 30px;
+  color: var(--primery-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .customers__discription {
+    font-size: 18px;
+  }
+}
+
+.customers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 90px;
+}
+
+.customers__item {
+  position: relative;
+}
+
+.customers__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.customers__item::before {
+  position: absolute;
+  display: block;
+  width: 72px;
+  height: 72px;
+  left: -90px;
+}
+
+.app::before {
+  content: '';
+  background-image: url(../img/customers/app.svg);
+}
+
+.tracking::before {
+  content: '';
+  background-image: url(../img/customers/tracking.svg);
+}
+
+.customers__subtitle {
+  font-size: 24px;
+  line-height: 1.42;
+  /* identical to box height, or 142% */
+  color: var(--title-text-color);
+}
+
+.customers__subdiscription {
+  font-size: 13px;
+  line-height: 30px;
+  /* identical to box height, or 231% */
+  color: var(--primery-text-color);
 }
 /*# sourceMappingURL=main.css.map */
