@@ -1,13 +1,39 @@
-.customers {padding-top: 30px;
-    padding-bottom: 30px;
-    @media screen and (min-width:$tablet){
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
+.customers {
     
 }
-
-
+.customers__box{
+    display: flex;
+}
+.customers__bg{
+    @media screen and (min-width:$tablet) {
+            width: 40%;
+    
+            background-image: url(../img/customers/bg/phone-bg.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;}
+    @media screen and (min-width:$desktop) {
+            width: 50%;
+    
+            background-image: url(../img/customers/bg/bg.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+    
+        }
+}
+.customers__content{
+    padding-top: 30px;
+        padding-bottom: 30px;
+    
+        @media screen and (min-width:$tablet) {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+                &:not(:last-child) {
+                    margin-right: 25px;
+                }
+}
 .customers__title {
     font-size: pxx;
         line-height: 1.23;

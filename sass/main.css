@@ -1555,16 +1555,46 @@ header {
   }
 }
 
-.customers {
+.customers__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .customers__bg {
+    width: 40%;
+    background-image: url(../img/customers/bg/phone-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1252px) {
+  .customers__bg {
+    width: 50%;
+    background-image: url(../img/customers/bg/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.customers__content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .customers {
+  .customers__content {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+}
+
+.customers__content:not(:last-child) {
+  margin-right: 25px;
 }
 
 .customers__title {
