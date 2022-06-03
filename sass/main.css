@@ -802,6 +802,9 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: -20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -817,10 +820,6 @@ header {
   .delivery__list {
     margin: -40px;
   }
-}
-
-.delivery__item {
-  margin: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1598,7 +1597,7 @@ header {
 }
 
 .customers__title {
-  font-size: pxx;
+  font-size: 36px;
   line-height: 1.23;
   /* identical to box height, or 123% */
   margin-bottom: 16px;
@@ -1673,6 +1672,179 @@ header {
   font-size: 13px;
   line-height: 30px;
   /* identical to box height, or 231% */
+  color: var(--primery-text-color);
+}
+
+.team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1252px) {
+  .team {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.team__title {
+  font-size: 36px;
+  line-height: 1.23;
+  /* identical to box height, or 123% */
+  margin-bottom: 22px;
+  color: var(--title-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .team__title {
+    font-size: 44px;
+  }
+}
+
+.team__discription {
+  font-size: 12px;
+  line-height: 1.23;
+  /* or 250% */
+  margin-bottom: 48px;
+  color: var(--primery-text-color);
+}
+
+@media screen and (min-width: 1252px) {
+  .team__discription {
+    line-height: 2.50;
+  }
+}
+
+.team-button__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team-button__item:not(:last-child) {
+  margin-right: 27px;
+}
+
+@media screen and (max-width: 768px) {
+  .team-button__item {
+    margin-bottom: 40px;
+  }
+}
+
+.title__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .title__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: -6px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.team__item {
+  padding: 20px 12px 25px 12px;
+  margin: 6px;
+  background-color: #ffffff;
+  border: 1px solid #EDEDED;
+  -webkit-box-shadow: 0px 2px 12px rgba(16, 16, 16, 0.08);
+          box-shadow: 0px 2px 12px rgba(16, 16, 16, 0.08);
+  border-radius: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 2 * 12px)/2);
+  }
+}
+
+@media screen and (min-width: 1252px) {
+  .team__item {
+    width: calc((100% - 3 * 12px)/3);
+  }
+}
+
+.team__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.team__img {
+  display: block;
+  margin-right: 10px;
+  width: 64px;
+  height: 64px;
+}
+
+.team__subtitle {
+  font-size: 18px;
+  line-height: 1.11;
+  /* identical to box height, or 111% */
+  color: var(--title-text-color);
+  margin-bottom: 6px;
+}
+
+.team__subdiscription {
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+  color: var(--accent-color);
+}
+
+.team__text {
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
   color: var(--primery-text-color);
 }
 /*# sourceMappingURL=main.css.map */
