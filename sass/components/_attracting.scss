@@ -1,0 +1,46 @@
+.attracting {
+    background-color: #000;
+}
+
+
+
+.attracting__box { display: flex;}
+
+.attracting__content { 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media screen and (min-width:$tablet) {
+    padding-top:150px ;
+    padding-bottom: 150px;
+    
+}}
+
+.attracting__title {
+    font-size: 36px;
+        line-height: 1.18;
+        /* or 118% */
+    
+    margin-bottom: 20px;
+        color: #FFFFFF;
+    @media screen and (min-width:$tablet) {
+        font-size: 56px;
+    }
+}
+
+.attracting__discription {
+    font-size: 12px;
+        line-height: 2.5;
+        /* or 250% */
+    
+    margin-bottom: 40px;
+        color: #FFFFFF;
+}
+
+
+
+.attracting__bg {
+    @media screen and (max-width:$tablet) {
+        display: none;
+        
+    }
+}
