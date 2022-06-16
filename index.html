@@ -29,13 +29,13 @@
     </svg>
 </button>
 
-    <nav class="nav">
+    <nav class="nav" id="menu">
     <ul class="nav__list">
-        <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Pricing</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Pages</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Cart(0)</a></li>
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li class="nav__item"><a href="#pages" class="nav__link">Pages</a></li>
+      
     </ul>
 </nav>
 <ul class="authorization">
@@ -44,18 +44,18 @@
     
 </ul>
 
-<div class="mobile-menu js-menu-container">
+<div class="mobile-menu js-menu-container" id="menu-mobile">
     <button type="button" class="mobile-close js-close-menu">
         <svg width="40" height="40">
         <use href="./img/symbol-defs.svg#close-menu"></use>
     </svg>
     </button>
     <ul class="mobile-nav__list ">
-        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Home</a></li>
-        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">About</a></li>
-        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Pricing</a></li>
-        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Pages</a></li>
-        <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Cart(0)</a></li>
+        <li class="mobile-nav__item"><a href="#home" class="mobile-nav__link">Home</a></li>
+        <li class="mobile-nav__item"><a href="#about" class="mobile-nav__link">About</a></li>
+        <li class="mobile-nav__item"><a href="#pricing" class="mobile-nav__link">Pricing</a></li>
+        <li class="mobile-nav__item"><a href="#pages" class="mobile-nav__link">Pages</a></li>
+       
    
 </div>
 </div>
@@ -143,7 +143,7 @@
             </ul>
             </div>
         </section>
-        <section class="benefits">
+        <section class="benefits" id="about">
             <div class="container benefits__box">
               <div class="benefits__content">  <h2 class="benefits__title">Learn why Deliver X is great for your restaurant</h2>
                 <p class="benefits__discription">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam</p>
@@ -178,7 +178,7 @@
                 <div class="burger-bg"></div>
             </div>
         </section>
-        <section class="service" >
+        <section class="service" id="pricing">
         <div class="container">
             <p class="service__discription">Our Features</p>
             <h2 class="service__title">Learn why Deliver is great for customers too!</h2>
@@ -232,7 +232,7 @@
                <div class=" customers__bg"></div>
             </div>
         </section>
-        <section class="team">
+        <section class="team" id="pages">
             <div class="container">
             <div class="title__box">
                     <div>
@@ -339,6 +339,10 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
